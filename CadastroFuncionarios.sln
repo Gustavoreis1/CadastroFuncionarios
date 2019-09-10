@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadastroFuncionarios", "CadastroFuncionarios\CadastroFuncionarios.csproj", "{5544B675-D4BE-4A0B-BD96-281CB8ACA54E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadastroFuncionariosWPF", "CadastroFuncionariosWPF\CadastroFuncionariosWPF.csproj", "{A07B1FEE-A4C0-418A-B8E0-68109A0F0D9E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5544B675-D4BE-4A0B-BD96-281CB8ACA54E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5544B675-D4BE-4A0B-BD96-281CB8ACA54E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5544B675-D4BE-4A0B-BD96-281CB8ACA54E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A07B1FEE-A4C0-418A-B8E0-68109A0F0D9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A07B1FEE-A4C0-418A-B8E0-68109A0F0D9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A07B1FEE-A4C0-418A-B8E0-68109A0F0D9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A07B1FEE-A4C0-418A-B8E0-68109A0F0D9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

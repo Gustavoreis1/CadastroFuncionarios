@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CadastroFuncionarios.Classes;
+using CadastroFuncionarios.Model;
 
 namespace CadastroFuncionarios.Model
 {
@@ -20,6 +20,9 @@ namespace CadastroFuncionarios.Model
         [Required(ErrorMessage = "O campo CPF é requerido!!")]
         [MaxLength(15, ErrorMessage = "O campo CPF recebe no máximo 15 caracteres")]
         public String CPF { get; set; }
+
+        [Required(ErrorMessage = "O campo Data de Nascimento é requerido!!")]
+        public DateTime Nasc { get; set; }
 
         public Endereco Endereco { get; set; }
     }

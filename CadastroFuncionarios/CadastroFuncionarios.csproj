@@ -49,9 +49,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\CadastroFuncionariosContext.cs" />
     <Compile Include="Model\Cargo.cs" />
     <Compile Include="Model\Cidade.cs" />
-    <Compile Include="Model\Class1.cs" />
     <Compile Include="Model\Departamento.cs" />
     <Compile Include="Model\Endereco.cs" />
     <Compile Include="Model\Funcionario.cs" />
