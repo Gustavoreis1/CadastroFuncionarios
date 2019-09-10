@@ -22,7 +22,7 @@ namespace CadastroFuncionarios.Model
         public String CPF { get; set; }
 
         [Required(ErrorMessage = "O campo Data de Nascimento é requerido!!")]
-        public DateTime Nasc { get; set; }
+        public DateTime Nascimento { get; set; }
 
         public Endereco Endereco { get; set; }
     }

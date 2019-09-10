@@ -32,11 +32,11 @@
         <TextBlock FontSize="30" Grid.Row="4" Grid.Column="0" FontFamily="Century Gothic">Data De Demissão:</TextBlock>
         <TextBlock FontSize="30" Grid.Row="5" Grid.Column="0" FontFamily="Century Gothic">Lista De Lotações:</TextBlock>
 
-        <TextBox Name="NomeTxtBox" Grid.Row="0" Grid.Column="1" FontFamily="Century Gothic"></TextBox>
-        <TextBox Name="CPFTxtBox" Grid.Row="1" Grid.Column="1" FontFamily="Century Gothic"></TextBox>
-        <DatePicker x:Name="NascimentoDatePicker" Grid.Row="2" Grid.Column="1" SelectedDate="{x:Static sys:DateTime.Now}"/>
-        <DatePicker x:Name="AdimssaoDatePicker" Grid.Row="3" Grid.Column="1" SelectedDate="{x:Static sys:DateTime.Now}"/>
-        <DatePicker x:Name="DeimssaoDatePicker" Grid.Row="4" Grid.Column="1" SelectedDate="{x:Static sys:DateTime.Now}"/>
+        <TextBox Name="NomeTxtBox" Grid.Row="0" Grid.Column="1" FontFamily="Century Gothic" Text="{Binding Funcionario.Nome}"></TextBox>
+        <TextBox Name="CPFTxtBox" Grid.Row="1" Grid.Column="1" FontFamily="Century Gothic" Text="{Binding Funcionario.CPF}"></TextBox>
+        <DatePicker x:Name="NascimentoDatePicker" Grid.Row="2" Grid.Column="1" SelectedDate="{Binding Funcionario.Nascimento}"></DatePicker>
+        <DatePicker x:Name="AdimssaoDatePicker" Grid.Row="3" Grid.Column="1" SelectedDate="{Binding Funcionario.Adimissao}"></DatePicker>
+        <DatePicker x:Name="DeimssaoDatePicker" Grid.Row="4" Grid.Column="1" SelectedDate="{Binding Funcionario.Demissao}"></DatePicker>
         <DataGrid Grid.Row="6" Grid.ColumnSpan="2"></DataGrid>
 
         <StackPanel HorizontalAlignment="Center" Grid.Row="8" Grid.ColumnSpan="2" Orientation="Horizontal">

@@ -23,8 +23,7 @@ namespace CadastroFuncionariosWPF.Views
         public WindowFuncionario()
         {
             InitializeComponent();
-            this.FuncionarioViewModel = new ViewModel.FuncionarioViewModel();
-            this.DataContext = this;
+            DataContext = this.FuncionarioViewModel;
         }
 
         private void SalvarButton_Click(object sender, RoutedEventArgs e)

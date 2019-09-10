@@ -12,11 +12,17 @@ namespace CadastroFuncionariosWPF.ViewModel
 {
     public class FuncionarioViewModel
     {
-
+        public Funcionario.Funcionario Funcionario { get; set; }
         private CadastroFuncionariosContext Context { get; set; }
 
         public ObservableCollection<Cargo> Cargos {get; set; }
 
+        public FuncionarioViewModel()
+        {
+           
+
+        }
+        
         public void Salvar()
         {
             this.Context.SaveChanges();

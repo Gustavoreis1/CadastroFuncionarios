@@ -16,5 +16,9 @@ namespace CadastroFuncionarios.Model
         public DateTime Demissao { get; set; }
 
         public IList<Lotacao> lotacaos { get; set; }
+
+        public class Funcionario
+        {
+        }
     }
 }
