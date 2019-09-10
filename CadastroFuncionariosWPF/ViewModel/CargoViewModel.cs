@@ -11,6 +11,8 @@ namespace CadastroFuncionariosWPF.ViewModel
 {
     public class CargoViewModel
     {
+        private CadastroFuncionariosContext Context { get; set; }
+
         public void Salvar()
         {
             this.Context.SaveChanges();

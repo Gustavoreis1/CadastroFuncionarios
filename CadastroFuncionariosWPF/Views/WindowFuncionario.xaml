@@ -14,7 +14,9 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
@@ -25,22 +27,28 @@
 
         <TextBlock FontSize="30" Grid.Row="0" Grid.Column="0" FontFamily="Century Gothic">Nome:</TextBlock>
         <TextBlock FontSize="30" Grid.Row="1" Grid.Column="0" FontFamily="Century Gothic">CPF:</TextBlock>
-        <TextBlock FontSize="30" Grid.Row="2" Grid.Column="0" FontFamily="Century Gothic">Data Nascimento:</TextBlock>
+        <TextBlock FontSize="30" Grid.Row="2" Grid.Column="0" FontFamily="Century Gothic">Data De Nascimento:</TextBlock>
         <TextBlock FontSize="30" Grid.Row="3" Grid.Column="0" FontFamily="Century Gothic">Data De Admissão:</TextBlock>
         <TextBlock FontSize="30" Grid.Row="4" Grid.Column="0" FontFamily="Century Gothic">Data De Demissão:</TextBlock>
+        <TextBlock FontSize="30" Grid.Row="5" Grid.Column="0" FontFamily="Century Gothic">Lista De Lotações:</TextBlock>
 
         <TextBox Name="NomeTxtBox" Grid.Row="0" Grid.Column="1" FontFamily="Century Gothic"></TextBox>
         <TextBox Name="CPFTxtBox" Grid.Row="1" Grid.Column="1" FontFamily="Century Gothic"></TextBox>
         <DatePicker x:Name="NascimentoDatePicker" Grid.Row="2" Grid.Column="1" SelectedDate="{x:Static sys:DateTime.Now}"/>
         <DatePicker x:Name="AdimssaoDatePicker" Grid.Row="3" Grid.Column="1" SelectedDate="{x:Static sys:DateTime.Now}"/>
         <DatePicker x:Name="DeimssaoDatePicker" Grid.Row="4" Grid.Column="1" SelectedDate="{x:Static sys:DateTime.Now}"/>
+        <DataGrid Grid.Row="6" Grid.ColumnSpan="2"></DataGrid>
 
-        <Button 
-            x:Name="SalvarButton" Content="Salvar" HorizontalAlignment="Center" Grid.Row="6" Grid.Column="1" 
-            Click="SalvarButton_Click" VerticalAlignment="Center" Width="75" FontFamily="Century Gothic" Background="Green"/>
-
-        <Button 
-            x:Name="CancelarButton" Content="Cancelar" HorizontalAlignment="Center" Grid.Row="6" Grid.Column="0" 
+        <StackPanel HorizontalAlignment="Center" Grid.Row="8" Grid.ColumnSpan="2" Orientation="Horizontal">
+            
+            <Button 
+            x:Name="CancelarButton" Content="Cancelar" HorizontalAlignment="Center" Grid.Row="6" Grid.Column="0" Margin="0,0,50,0"
             Click="CancelarButton_Click" VerticalAlignment="Center" Width="75" FontFamily="Century Gothic" Background="Red"/>
+            
+            <Button 
+            x:Name="SalvarButton" Content="Salvar" HorizontalAlignment="Center" Grid.Row="6" Grid.Column="1" Margin="50,0,0,0"
+            Click="SalvarButton_Click" VerticalAlignment="Center" Width="75" FontFamily="Century Gothic" Background="Green"/>
+            
+        </StackPanel>
     </Grid>
 </Window>

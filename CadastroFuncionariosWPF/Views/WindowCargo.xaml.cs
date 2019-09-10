@@ -23,15 +23,15 @@ namespace CadastroFuncionariosWPF.Views
         public WindowCargo()
         {
             InitializeComponent();
+            this.CargoViewModel = new ViewModel.CargoViewModel();
+            this.DataContext = this;
         }
 
         private void SalvarButton_Click(object sender, RoutedEventArgs e)
         {
-            private void SalvarButton_Click(object sender, RoutedEventArgs e)
-            {
-                this.CargoViewModel.Salvar();
-                this.Close();
-            }
+            
+            this.CargoViewModel.Salvar();
+            this.Close();
         }
 
         private void CancelarButton_Click(object sender, RoutedEventArgs e)

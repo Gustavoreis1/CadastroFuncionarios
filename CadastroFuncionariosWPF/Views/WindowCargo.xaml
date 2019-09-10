@@ -11,7 +11,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="20"/>
+            <RowDefinition />
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         
@@ -28,12 +28,14 @@
         <TextBox Name="AtribuicoesTxtBox" Grid.Row="1" Grid.Column="1" FontFamily="Century Gothic" TextWrapping="Wrap"></TextBox>
         <TextBox Name="SalarioBaseTxtBox" Grid.Row="2" Grid.Column="1" FontFamily="Century Gothic"></TextBox>
 
-        <Button 
-            x:Name="SalvarButton" Content="Salvar" HorizontalAlignment="Center" Grid.Row="4" Grid.Column="1" 
-            Click="SalvarButton_Click" VerticalAlignment="Center" Width="75" FontFamily="Century Gothic" Background="Green"/>
-        
-        <Button 
-            x:Name="CancelarButton" Content="Cancelar" HorizontalAlignment="Center" Grid.Row="4" Grid.Column="0" 
+        <StackPanel HorizontalAlignment="Center" Grid.Row="5" Grid.ColumnSpan="2" Orientation="Horizontal">
+            <Button 
+            x:Name="CancelarButton" Content="Cancelar" HorizontalAlignment="Center" Grid.Row="6" Grid.Column="0" Margin="0,0,50,0"
             Click="CancelarButton_Click" VerticalAlignment="Center" Width="75" FontFamily="Century Gothic" Background="Red"/>
+
+            <Button 
+            x:Name="SalvarButton" Content="Salvar" HorizontalAlignment="Center" Grid.Row="6" Grid.Column="1" Margin="50,0,0,0"
+            Click="SalvarButton_Click" VerticalAlignment="Center" Width="75" FontFamily="Century Gothic" Background="Green"/>
+        </StackPanel>
     </Grid>
 </Window>

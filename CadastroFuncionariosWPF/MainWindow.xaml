@@ -7,6 +7,22 @@
         mc:Ignorable="d"
         Title="Index" Height="450" Width="800">
     <Grid>
-        
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Menu Height="20" VerticalAlignment="Top" Grid.ColumnSpan="2">
+            <MenuItem Header="Gerenciar">
+                <MenuItem Header="Cargos"></MenuItem>   
+                <MenuItem Header="Departamentos"></MenuItem>   
+                <MenuItem x:Name="FuncionariosMenu" Header="Funcioanrios" Click="FuncionariosMenu_Click"></MenuItem>   
+                <MenuItem Header="Cidades"></MenuItem>
+                <MenuItem Header="Endereços"></MenuItem>
+            </MenuItem>
+            <MenuItem x:Name="SairMenu" Header="Sair" Click="SairMenu_Click">
+            </MenuItem>
+        </Menu>
     </Grid>
 </Window>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CadastroFuncionariosWPF.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,17 @@ namespace CadastroFuncionariosWPF
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void FuncionariosMenu_Click(object sender, RoutedEventArgs e)
+        {
+            Window window = new WindowFuncionario();
+            window.ShowDialog();
+        }
+
+        private void SairMenu_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
